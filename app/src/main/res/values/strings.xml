@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Anime Spot</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <array name="pb_color">
+        <item>@color/colorPink</item>
+        <item>@color/colorOrange</item>
+        <item>@color/colorGreen</item>
+        <item>@color/colorPurple</item>
+    </array>
+</resources>

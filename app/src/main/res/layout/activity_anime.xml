@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.anime.AnimeActivity">
+
+    <ProgressBar
+        android:id="@+id/pbAnime"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="cursive"
+                android:text="Anime Detail"
+                android:textAlignment="viewStart"
+                android:textColor="#606060"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgFavoriteAnime"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_favorite_border_gray_24dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imgCloseAnime"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_weight="0"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_cancel_gray_24dp" />
+
+        </LinearLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/layouDetailAnime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imgAnime"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_launcher_background" />
+
+                <TextView
+                    android:id="@+id/tvTitleAnime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Title"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvJapanTitleAnime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="japanese title " />
+
+                <TextView
+                    android:id="@+id/tvTypeAnime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="type" />
+
+                <TextView
+                    android:id="@+id/tvSourceAnime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="source" />
+
+                <TextView
+                    android:id="@+id/tvGenreAnime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="genre" />
+
+                <TextView
+                    android:id="@+id/tvStatusAnime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="status " />
+
+                <TextView
+                    android:id="@+id/tvAiredStartingAnime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="aired starting" />
+
+                <TextView
+                    android:id="@+id/tvDurationAnime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="duration" />
+
+                <TextView
+                    android:id="@+id/tvRatingAnime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="rating" />
+
+                <TextView
+                    android:id="@+id/tvScoreAnime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="score" />
+
+                <TextView
+                    android:id="@+id/tvScoreByAnime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="scored by" />
+
+                <TextView
+                    android:id="@+id/tvRankAnime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="rank" />
+
+                <TextView
+                    android:id="@+id/tvPopularityAnime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="popularity" />
+
+                <TextView
+                    android:id="@+id/tvMembersAnime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="members" />
+
+                <TextView
+                    android:id="@+id/tvFavoritesAnime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="favorites" />
+
+                <TextView
+                    android:id="@+id/tvSynopsisAnime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="synopsis" />
+
+                <TextView
+                    android:id="@+id/tvBroadcastAnime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="broadcast" />
+
+                <TextView
+                    android:id="@+id/tvProducerAnime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="producer" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Staff"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvStaffAnime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
