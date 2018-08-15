@@ -1,5 +1,5 @@
 # AnimeSpot
-Anime Information. (Retrofit 2 + SQLite)<br/>
+Anime Information. (Retrofit 2 + SQLite + MVP Architecture)<br/>
 <h3>Feature</h3>
 * Showing airing anime in this season<br/>
 * Showing upcoming anime in next season<br/>
