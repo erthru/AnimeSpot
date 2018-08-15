@@ -85,7 +85,7 @@ class AnimeActivity : BaseActivity(), AnimeContract.View {
 
         tvTitleAnime.text = data?.get("title").toString()
         tvJapanTitleAnime.text = "Japanese Title: "+data?.get("title_japanese").toString()
-        Glide.with(this).load(data?.get("image_url")).into(imgAnime)
+        Glide.with(applicationContext).load(data?.get("image_url")).into(imgAnime)
         tvTypeAnime.text = "Type: "+data?.get("type").toString()
         tvSourceAnime.text = "Source: "+data?.get("source").toString()
         tvStatusAnime.text = "Status: "+data?.get("status").toString()
